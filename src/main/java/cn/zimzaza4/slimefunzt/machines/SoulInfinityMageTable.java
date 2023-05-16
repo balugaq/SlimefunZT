@@ -148,7 +148,6 @@ public class SoulInfinityMageTable extends CraftingBlock {
         }else {p.sendMessage("§c结构不完整");}
     }
 
-    @Override
     protected void onSuccessfulCraft(BlockMenu menu, ItemStack toOutput) {
 
     }

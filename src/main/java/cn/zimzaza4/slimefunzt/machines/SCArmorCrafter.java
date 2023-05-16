@@ -82,7 +82,6 @@ public final class SCArmorCrafter extends CraftingBlock implements EnergyNetComp
         }
     }
 
-    @Override
     protected void onSuccessfulCraft(BlockMenu menu, ItemStack toOutput) {
         setCharge(menu.getLocation(), 0);
     }

@@ -3,6 +3,8 @@ package cn.zimzaza4.slimefunzt.World;
 import cn.zimzaza4.slimefunzt.SlimefunZT;
 import cn.zimzaza4.slimefunzt.lists.Items;
 import cn.zimzaza4.slimefunzt.util.SchematicUtil;
+
+import com.sk89q.worldedit.WorldEditException;
 import com.sk89q.worldedit.extent.clipboard.Clipboard;
 import lombok.SneakyThrows;
 import me.mrCookieSlime.Slimefun.api.BlockStorage;
@@ -105,7 +107,11 @@ public class VoidPopulator extends BlockPopulator {
                         Location loc = b.getLocation();
 
 
-                        SchematicUtil.SpawnSchmatic(cb, loc);
+                        try {
+							SchematicUtil.SpawnSchmatic(cb, loc);
+						} catch (WorldEditException e) {
+							e.printStackTrace();
+						}
 
                     }
                 }

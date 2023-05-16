@@ -271,14 +271,23 @@ public class NewSingConer extends AbstractMachineBlock implements RecipeDisplayI
         return items;
     }
 
-    @AllArgsConstructor
     private static final class Recipe {
-
-        private final SlimefunItemStack output;
+    	
+		private final SlimefunItemStack output;
         private final ItemStack input;
         private final String id;
         private final int amount;
 
+        public Recipe(SlimefunItemStack output, ItemStack input, String id, int amount) {
+			this.output = output;
+			this.input = input;
+			this.id = id;
+			this.amount = amount;
+		}
     }
+
+	public void setSpeed(int speed) {
+		this.speed = speed;
+	}
 
 }
