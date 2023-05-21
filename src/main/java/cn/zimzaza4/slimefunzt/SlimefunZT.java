@@ -22,10 +22,13 @@ public class SlimefunZT extends AbstractAddon {
     public Boolean isDebug;
     public static SlimefunZT inst;
     private static SlimefunZT Instance;
+    public Clipboard void_ring;
     public Clipboard void_tree;
+    public Clipboard void_tree_2;
     public Clipboard void_tree_large;
     public Clipboard stone_1;
     public Clipboard stone_2;
+    public Clipboard stone_3;
 
 
     public String void_world;
@@ -104,16 +107,53 @@ public class SlimefunZT extends AbstractAddon {
     private void setupConfig(){
         if (!new File(getDataFolder(), "config.yml").exists()){
             saveDefaultConfig();
+        }
+            
+        if (!new File(getDataFolder(), "void_ring.schem").exists()){
+        	saveResource("void_ring.schem", true);
+        }
+        if (!new File(getDataFolder(), "void_tree.schem").exists()){
             saveResource("void_tree.schem", true);
+        }
+        if (!new File(getDataFolder(), "void_tree_2.schem").exists()){
+            saveResource("void_tree_2.schem", true);
+        }
+        if (!new File(getDataFolder(), "void_tree_large.schem").exists()){
             saveResource("void_tree_large.schem", true);
+        }
+        if (!new File(getDataFolder(), "stone_natural_1.schem").exists()){
             saveResource("stone_natural_1.schem", true);
+        }
+        if (!new File(getDataFolder(), "stone_natural_2.schem").exists()){
             saveResource("stone_natural_2.schem", true);
         }
+        if (!new File(getDataFolder(), "stone_natural_3.schem").exists()){
+            saveResource("stone_natural_3.schem", true);
+        }
+        
+            /*saveResource("void_ring.schem", true);
+            
+            saveResource("void_tree.schem", true);
+            saveResource("void_tree_2.schem", true);
+            saveResource("void_tree_large.schem", true);
+            
+            saveResource("stone_natural_1.schem", true);
+            saveResource("stone_natural_2.schem", true);
+            saveResource("stone_natural_3.schem", true);*/
+
     }
     private void setupSchematic() throws IOException {
-        File f = new File (getDataFolder(),"void_tree.schem");
+    	File f = new File (getDataFolder(),"void_ring.schem");
+        System.out.println("Loading "+f.getPath());
+        this.void_ring = SchematicUtil.LoadSchmatic(f);
+        
+        f = new File (getDataFolder(),"void_tree.schem");
         System.out.println("Loading "+f.getPath());
         this.void_tree = SchematicUtil.LoadSchmatic(f);
+        
+        f = new File (getDataFolder(),"void_tree_2.schem");
+        System.out.println("Loading "+f.getPath());
+        this.void_tree_2 = SchematicUtil.LoadSchmatic(f);
 
         f = new File (getDataFolder(),"void_tree_large.schem");
         System.out.println("Loading "+f.getPath());
@@ -127,7 +167,9 @@ public class SlimefunZT extends AbstractAddon {
         System.out.println("Loading "+f.getPath());
         this.stone_2 = SchematicUtil.LoadSchmatic(f);
 
-
+        f = new File (getDataFolder(),"stone_natural_3.schem");
+        System.out.println("Loading "+f.getPath());
+        this.stone_3 = SchematicUtil.LoadSchmatic(f);
 
     }
 }

@@ -73,14 +73,14 @@
       <artifactId>InfinityExpansion</artifactId>
       <version>MODIFIED</version>
       <scope>system</scope>
-      <systemPath>C:\Users\Administrator\Documents\GitHub\SCrafter\lib\IE.jar</systemPath>
+      <systemPath>C:\Users\Administrator\Documents\GitHub\SlimefunZT\lib\IE.jar</systemPath>
     </dependency>
     <dependency>
       <groupId>space.kiichan</groupId>
       <artifactId>GeneticChickengineering</artifactId>
       <version>1.2.1</version>
       <scope>system</scope>
-      <systemPath>C:\Users\Administrator\Documents\GitHub\SCrafter\lib\GC.jar</systemPath>
+      <systemPath>C:\Users\Administrator\Documents\GitHub\SlimefunZT\lib\GC.jar</systemPath>
     </dependency>
 
 
@@ -103,7 +103,7 @@
       <artifactId>EliteMobs</artifactId>
       <version>7.2.33</version>
       <scope>system</scope>
-      <systemPath>C:\Users\Administrator\Documents\GitHub\SCrafter\lib\EliteMobs.jar</systemPath>
+      <systemPath>C:\Users\Administrator\Documents\GitHub\SlimefunZT\lib\EliteMobs.jar</systemPath>
     </dependency>
             <dependency>
             <groupId>com.google.code.findbugs</groupId>
