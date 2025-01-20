@@ -6,6 +6,7 @@ import cn.zimzaza4.slimefunzt.util.SchematicUtil;
 
 import com.sk89q.worldedit.WorldEditException;
 import com.sk89q.worldedit.extent.clipboard.Clipboard;
+import io.github.thebusybiscuit.slimefun4.implementation.Slimefun;
 import lombok.SneakyThrows;
 import me.mrCookieSlime.Slimefun.api.BlockStorage;
 import org.bukkit.Chunk;
@@ -23,9 +24,6 @@ public class VoidPopulator extends BlockPopulator {
     @SneakyThrows
     @Override
     public void populate(@NotNull World world, @NotNull Random random, @NotNull Chunk chunk) {
-        if (BlockStorage.getStorage(world) == null) {
-            new BlockStorage(world);
-        }
         Double canspawn = Math.random();
         int x = random.nextInt(16);
         int y = random.nextInt(10);
