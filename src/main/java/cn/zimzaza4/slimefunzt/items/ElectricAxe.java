@@ -1,14 +1,15 @@
 package cn.zimzaza4.slimefunzt.items;
 
+import javax.annotation.Nonnull;
+
+import org.bukkit.inventory.ItemStack;
+
 import io.github.thebusybiscuit.slimefun4.api.items.ItemGroup;
 import io.github.thebusybiscuit.slimefun4.api.items.SlimefunItem;
 import io.github.thebusybiscuit.slimefun4.api.items.SlimefunItemStack;
 import io.github.thebusybiscuit.slimefun4.api.recipes.RecipeType;
 import io.github.thebusybiscuit.slimefun4.core.attributes.Rechargeable;
 import io.github.thebusybiscuit.slimefun4.core.handlers.ToolUseHandler;
-import org.bukkit.inventory.ItemStack;
-
-import javax.annotation.Nonnull;
 
 public class ElectricAxe extends SlimefunItem implements Rechargeable {
 

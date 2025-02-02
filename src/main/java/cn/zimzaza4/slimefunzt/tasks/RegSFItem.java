@@ -1,5 +1,10 @@
 package cn.zimzaza4.slimefunzt.tasks;
 
+import org.bukkit.Material;
+import org.bukkit.inventory.ItemStack;
+import org.bukkit.potion.PotionEffect;
+import org.bukkit.potion.PotionEffectType;
+
 import cn.zimzaza4.slimefunzt.SlimefunZT;
 import cn.zimzaza4.slimefunzt.items.ElectricAxe;
 import cn.zimzaza4.slimefunzt.items.IEItem;
@@ -18,10 +23,6 @@ import io.github.thebusybiscuit.slimefun4.api.items.SlimefunItemStack;
 import io.github.thebusybiscuit.slimefun4.api.recipes.RecipeType;
 import io.github.thebusybiscuit.slimefun4.implementation.SlimefunItems;
 import io.github.thebusybiscuit.slimefun4.implementation.items.armor.SlimefunArmorPiece;
-import org.bukkit.Material;
-import org.bukkit.inventory.ItemStack;
-import org.bukkit.potion.PotionEffect;
-import org.bukkit.potion.PotionEffectType;
 
 public class RegSFItem {
     public static void run() {
@@ -68,7 +69,7 @@ public class RegSFItem {
 
         new SlimefunArmorPiece(Items.ToolCate, Items.gold_Head, RecipeType.ENHANCED_CRAFTING_TABLE, Helmet(new ItemStack(Material.GOLDEN_APPLE)),
 
-                new PotionEffect[]{new PotionEffect(PotionEffectType.DAMAGE_RESISTANCE, 400, 0)})
+                new PotionEffect[]{new PotionEffect(PotionEffectType.RESISTANCE, 400, 0)})
 
                 .register(SlimefunZT.getInstance());
 
@@ -82,20 +83,20 @@ public class RegSFItem {
 
         new SlimefunArmorPiece(Items.ToolCate, Items.gold_Leg, RecipeType.ENHANCED_CRAFTING_TABLE, Leg(new ItemStack(Material.GOLDEN_APPLE)),
 
-                new PotionEffect[]{new PotionEffect(PotionEffectType.DAMAGE_RESISTANCE, 120, 0)})
+                new PotionEffect[]{new PotionEffect(PotionEffectType.RESISTANCE, 120, 0)})
 
                 .register(SlimefunZT.getInstance());
 
         new SlimefunArmorPiece(Items.ToolCate, Items.gold_feet, RecipeType.ENHANCED_CRAFTING_TABLE, Boot(new ItemStack(Material.GOLDEN_APPLE)),
 
-                new PotionEffect[]{new PotionEffect(PotionEffectType.DAMAGE_RESISTANCE, 120, 0)})
+                new PotionEffect[]{new PotionEffect(PotionEffectType.RESISTANCE, 120, 0)})
 
                 .register(SlimefunZT.getInstance());
 
 
         new SlimefunArmorPiece(Items.ToolCate, Items.e_gold_Head, RecipeType.ENHANCED_CRAFTING_TABLE, Helmet(new ItemStack(Material.ENCHANTED_GOLDEN_APPLE)),
 
-                new PotionEffect[]{new PotionEffect(PotionEffectType.DAMAGE_RESISTANCE, 400, 1)})
+                new PotionEffect[]{new PotionEffect(PotionEffectType.RESISTANCE, 400, 1)})
 
                 .register(SlimefunZT.getInstance());
 
@@ -109,13 +110,13 @@ public class RegSFItem {
 
         new SlimefunArmorPiece(Items.ToolCate, Items.e_gold_Leg, RecipeType.ENHANCED_CRAFTING_TABLE, Leg(new ItemStack(Material.ENCHANTED_GOLDEN_APPLE)),
 
-                new PotionEffect[]{new PotionEffect(PotionEffectType.DAMAGE_RESISTANCE, 120, 1)})
+                new PotionEffect[]{new PotionEffect(PotionEffectType.RESISTANCE, 120, 1)})
 
                 .register(SlimefunZT.getInstance());
 
         new SlimefunArmorPiece(Items.ToolCate, Items.e_gold_feet, RecipeType.ENHANCED_CRAFTING_TABLE, Boot(new ItemStack(Material.ENCHANTED_GOLDEN_APPLE)),
 
-                new PotionEffect[]{new PotionEffect(PotionEffectType.DAMAGE_RESISTANCE, 120, 1)})
+                new PotionEffect[]{new PotionEffect(PotionEffectType.RESISTANCE, 120, 1)})
 
                 .register(SlimefunZT.getInstance());
 

@@ -1,15 +1,16 @@
 package cn.zimzaza4.slimefunzt.lists;
 
+import org.bukkit.Material;
+import org.bukkit.NamespacedKey;
+import org.bukkit.enchantments.Enchantment;
+import org.bukkit.inventory.ItemStack;
+
 import cn.zimzaza4.slimefunzt.SlimefunZT;
 import io.github.bakedlibs.dough.items.CustomItemStack;
 import io.github.thebusybiscuit.slimefun4.api.items.SlimefunItemStack;
 import io.github.thebusybiscuit.slimefun4.api.items.groups.NestedItemGroup;
 import io.github.thebusybiscuit.slimefun4.api.items.groups.SubItemGroup;
 import io.github.thebusybiscuit.slimefun4.utils.LoreBuilder;
-import org.bukkit.Material;
-import org.bukkit.NamespacedKey;
-import org.bukkit.enchantments.Enchantment;
-import org.bukkit.inventory.ItemStack;
 
 
 public class Items {
@@ -250,7 +251,7 @@ public class Items {
                  "&b电锯",
                         LoreBuilder.powerCharged(0, 300));
         static {
-                ElectricAxe.addUnsafeEnchantment(Enchantment.DIG_SPEED, 20);
+                ElectricAxe.addUnsafeEnchantment(Enchantment.EFFICIENCY, 20);
         }
 
         public static final SlimefunItemStack Ender_feet = new SlimefunItemStack("Z_ENDER_BOOT",
@@ -258,14 +259,14 @@ public class Items {
                  "&9紫影靴");
         static {
 
-                Ender_feet.addUnsafeEnchantment(Enchantment.PROTECTION_ENVIRONMENTAL, 5);
+                Ender_feet.addUnsafeEnchantment(Enchantment.PROTECTION, 5);
         }
 
         public static final SlimefunItemStack Ender_Leg = new SlimefunItemStack("Z_ENDER_LEG",
                 Material.IRON_LEGGINGS,
                 "&9紫影护腿");
         static {
-                Ender_Leg.addUnsafeEnchantment(Enchantment.PROTECTION_ENVIRONMENTAL, 5);
+                Ender_Leg.addUnsafeEnchantment(Enchantment.PROTECTION, 5);
         }
 
         public static final SlimefunItemStack Ender_Chest = new SlimefunItemStack("Z_ENDER_CHEST",
@@ -273,14 +274,14 @@ public class Items {
                 "&9紫影胸甲");
         static {
 
-                Ender_Chest.addUnsafeEnchantment(Enchantment.PROTECTION_ENVIRONMENTAL, 5);
+                Ender_Chest.addUnsafeEnchantment(Enchantment.PROTECTION, 5);
         }
 
         public static final SlimefunItemStack Ender_Head = new SlimefunItemStack("Z_ENDER_HELMET",
                 Material.IRON_HELMET,
                 "&9紫影头盔");
         static {
-                Ender_Head.addUnsafeEnchantment(Enchantment.PROTECTION_ENVIRONMENTAL, 5);
+                Ender_Head.addUnsafeEnchantment(Enchantment.PROTECTION, 5);
         }
 
         public static final SlimefunItemStack Soul_Sword = new SlimefunItemStack("ZIM_SOUL_SWOED",
@@ -289,7 +290,7 @@ public class Items {
                 "",
                 "&c提高灵魂粉末的掉落数量");
         static {
-                Soul_Sword.addUnsafeEnchantment(Enchantment.DAMAGE_ALL, 2);
+                Soul_Sword.addUnsafeEnchantment(Enchantment.SHARPNESS, 2);
         }
 
         public static final SlimefunItemStack Soul_ece = new SlimefunItemStack("ZIM_SOUL_ECT",
@@ -304,14 +305,14 @@ public class Items {
                 "&e金苹果靴");
         static {
 
-                gold_feet.addUnsafeEnchantment(Enchantment.PROTECTION_ENVIRONMENTAL, 3);
+                gold_feet.addUnsafeEnchantment(Enchantment.PROTECTION, 3);
         }
 
         public static final SlimefunItemStack gold_Leg = new SlimefunItemStack("Z_GOLDP_LEG",
                 Material.GOLDEN_LEGGINGS,
                 "&e金苹果护腿");
         static {
-                gold_Leg.addUnsafeEnchantment(Enchantment.PROTECTION_ENVIRONMENTAL, 3);
+                gold_Leg.addUnsafeEnchantment(Enchantment.PROTECTION, 3);
         }
 
         public static final SlimefunItemStack gold_Chest = new SlimefunItemStack("Z_GOLDP_CHESTPLANT",
@@ -319,14 +320,14 @@ public class Items {
                 "&e金苹果胸甲");
         static {
 
-                gold_Chest.addUnsafeEnchantment(Enchantment.PROTECTION_ENVIRONMENTAL, 3);
+                gold_Chest.addUnsafeEnchantment(Enchantment.PROTECTION, 3);
         }
 
         public static final SlimefunItemStack gold_Head = new SlimefunItemStack("Z_GOLDP_HELMET",
                 Material.GOLDEN_HELMET,
                 "&e金苹果头盔");
         static {
-                gold_Head.addUnsafeEnchantment(Enchantment.PROTECTION_ENVIRONMENTAL, 3);
+                gold_Head.addUnsafeEnchantment(Enchantment.PROTECTION, 3);
         }
 
         public static final SlimefunItemStack e_gold_feet = new SlimefunItemStack("Z_E_GOLDP_BOOT",
@@ -334,28 +335,28 @@ public class Items {
                 "&e&l附魔金苹果靴");
         static {
 
-                e_gold_feet.addUnsafeEnchantment(Enchantment.PROTECTION_ENVIRONMENTAL, 4);
+                e_gold_feet.addUnsafeEnchantment(Enchantment.PROTECTION, 4);
         }
 
         public static final SlimefunItemStack e_gold_Leg = new SlimefunItemStack("Z_E_GOLDP_LEG",
                 Material.GOLDEN_LEGGINGS,
                 "&e&l附魔金苹果护腿");
         static {
-                e_gold_Leg.addUnsafeEnchantment(Enchantment.PROTECTION_ENVIRONMENTAL, 4);
+                e_gold_Leg.addUnsafeEnchantment(Enchantment.PROTECTION, 4);
         }
 
         public static final SlimefunItemStack e_gold_Chest = new SlimefunItemStack("Z_E_GOLDP_CHESTPLANT",
                 Material.GOLDEN_CHESTPLATE,
                 "&e&l附魔金苹果胸甲");
         static {
-                e_gold_Chest.addUnsafeEnchantment(Enchantment.PROTECTION_ENVIRONMENTAL, 4);
+                e_gold_Chest.addUnsafeEnchantment(Enchantment.PROTECTION, 4);
         }
 
         public static final SlimefunItemStack e_gold_Head = new SlimefunItemStack("Z_E_GOLDP_HELMET",
                 Material.GOLDEN_HELMET,
                "&e&l附魔金苹果头盔");
         static {
-                e_gold_Head.addUnsafeEnchantment(Enchantment.PROTECTION_ENVIRONMENTAL, 4);
+                e_gold_Head.addUnsafeEnchantment(Enchantment.PROTECTION, 4);
         }
 
         public static  SlimefunItemStack Void_Stone = new SlimefunItemStack("ZIM_VOID_STONE",

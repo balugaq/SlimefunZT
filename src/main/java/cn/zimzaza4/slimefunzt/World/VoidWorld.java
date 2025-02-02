@@ -1,16 +1,17 @@
 package cn.zimzaza4.slimefunzt.World;
 
+import java.util.Collections;
+import java.util.List;
+import java.util.Random;
+
+import javax.annotation.Nonnull;
+
 import org.bukkit.Material;
 import org.bukkit.World;
 import org.bukkit.block.Biome;
 import org.bukkit.generator.BlockPopulator;
 import org.bukkit.generator.ChunkGenerator;
 import org.bukkit.util.noise.SimplexOctaveGenerator;
-
-import javax.annotation.Nonnull;
-import java.util.Collections;
-import java.util.List;
-import java.util.Random;
 
 public class VoidWorld extends ChunkGenerator {
     private SimplexOctaveGenerator noise;

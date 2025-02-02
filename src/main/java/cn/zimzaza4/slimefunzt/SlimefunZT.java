@@ -1,5 +1,19 @@
 package cn.zimzaza4.slimefunzt;
 
+import java.io.File;
+import java.io.IOException;
+import java.util.Locale;
+import java.util.Random;
+
+import org.bukkit.Bukkit;
+import org.bukkit.NamespacedKey;
+import org.bukkit.World;
+import org.bukkit.WorldCreator;
+import org.bukkit.WorldType;
+import org.bukkit.generator.ChunkGenerator;
+
+import com.sk89q.worldedit.extent.clipboard.Clipboard;
+
 import cn.zimzaza4.slimefunzt.World.VoidWorld;
 import cn.zimzaza4.slimefunzt.listeners.ClickMac;
 import cn.zimzaza4.slimefunzt.listeners.EliteMobD;
@@ -7,15 +21,7 @@ import cn.zimzaza4.slimefunzt.listeners.NormalMobD;
 import cn.zimzaza4.slimefunzt.tasks.RegSFItem;
 import cn.zimzaza4.slimefunzt.tasks.RegSFMachine;
 import cn.zimzaza4.slimefunzt.util.SchematicUtil;
-import com.sk89q.worldedit.extent.clipboard.Clipboard;
 import io.github.mooy1.infinitylib.core.AbstractAddon;
-import org.bukkit.*;
-import org.bukkit.generator.ChunkGenerator;
-
-import java.io.File;
-import java.io.IOException;
-import java.util.Locale;
-import java.util.Random;
 
 public class SlimefunZT extends AbstractAddon {
     public Boolean isFAME;

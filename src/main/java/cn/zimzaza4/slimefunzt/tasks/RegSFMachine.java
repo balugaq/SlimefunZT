@@ -1,18 +1,28 @@
 package cn.zimzaza4.slimefunzt.tasks;
 
-import cn.zimzaza4.slimefunzt.SlimefunZT;
-import cn.zimzaza4.slimefunzt.lists.Items;
-import cn.zimzaza4.slimefunzt.machines.*;
-import io.github.thebusybiscuit.slimefun4.api.items.SlimefunItemStack;
-import io.github.thebusybiscuit.slimefun4.api.recipes.RecipeType;
-import io.github.thebusybiscuit.slimefun4.implementation.SlimefunItems;
-import io.github.thebusybiscuit.slimefun4.implementation.items.electric.machines.ElectricIngotFactory;
-import me.mrCookieSlime.Slimefun.Objects.SlimefunItem.abstractItems.AContainer;
 import org.bukkit.Bukkit;
 import org.bukkit.Color;
 import org.bukkit.Material;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.plugin.java.JavaPlugin;
+
+import cn.zimzaza4.slimefunzt.SlimefunZT;
+import cn.zimzaza4.slimefunzt.lists.Items;
+import cn.zimzaza4.slimefunzt.machines.Antier;
+import cn.zimzaza4.slimefunzt.machines.AutoGoldCrafter;
+import cn.zimzaza4.slimefunzt.machines.AutoSoulCrafter;
+import cn.zimzaza4.slimefunzt.machines.CarbonCrafter;
+import cn.zimzaza4.slimefunzt.machines.CarbonCrafterII;
+import cn.zimzaza4.slimefunzt.machines.SCArmorCrafter;
+import cn.zimzaza4.slimefunzt.machines.ZIMysger;
+import cn.zimzaza4.slimefunzt.machines.ZMSaiktMach;
+import cn.zimzaza4.slimefunzt.machines.ZMSaiktMachII;
+import cn.zimzaza4.slimefunzt.machines.ZmDiamondMach;
+import io.github.thebusybiscuit.slimefun4.api.items.SlimefunItemStack;
+import io.github.thebusybiscuit.slimefun4.api.recipes.RecipeType;
+import io.github.thebusybiscuit.slimefun4.implementation.SlimefunItems;
+import io.github.thebusybiscuit.slimefun4.implementation.items.electric.machines.ElectricIngotFactory;
+import me.mrCookieSlime.Slimefun.Objects.SlimefunItem.abstractItems.AContainer;
 import space.kiichan.geneticchickengineering.GeneticChickengineering;
 import space.kiichan.geneticchickengineering.items.GCEItems;
 import space.kiichan.geneticchickengineering.machines.ExcitationChamber;

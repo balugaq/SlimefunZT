@@ -1,12 +1,13 @@
 package cn.zimzaza4.slimefunzt.util;
 
 
+import org.bukkit.inventory.ItemStack;
+
 import cn.zimzaza4.slimefunzt.SlimefunZT;
 import io.github.thebusybiscuit.slimefun4.api.items.ItemGroup;
 import io.github.thebusybiscuit.slimefun4.api.items.SlimefunItem;
 import io.github.thebusybiscuit.slimefun4.api.items.SlimefunItemStack;
 import io.github.thebusybiscuit.slimefun4.api.recipes.RecipeType;
-import org.bukkit.inventory.ItemStack;
 
 public class SkUtils {
     public static void regitem(String id, ItemStack item, ItemGroup category, RecipeType rt, ItemStack[] recipe) {

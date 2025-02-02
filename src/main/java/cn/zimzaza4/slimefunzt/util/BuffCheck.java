@@ -1,10 +1,11 @@
 package cn.zimzaza4.slimefunzt.util;
 
-import me.mrCookieSlime.Slimefun.api.BlockStorage;
 import org.bukkit.block.Block;
 import org.bukkit.entity.Player;
 import org.bukkit.potion.PotionEffect;
 import org.bukkit.potion.PotionEffectType;
+
+import me.mrCookieSlime.Slimefun.api.BlockStorage;
 
 public class BuffCheck {
     public static void Check(Player p, String itemid, Block b, PotionEffectType type) {

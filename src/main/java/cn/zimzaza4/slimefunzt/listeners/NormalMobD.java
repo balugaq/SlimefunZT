@@ -1,12 +1,13 @@
 package cn.zimzaza4.slimefunzt.listeners;
 
-import cn.zimzaza4.slimefunzt.lists.Items;
-import io.github.thebusybiscuit.slimefun4.api.items.SlimefunItem;
-import io.github.thebusybiscuit.slimefun4.api.items.SlimefunItemStack;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.entity.EntityDeathEvent;
+
+import cn.zimzaza4.slimefunzt.lists.Items;
+import io.github.thebusybiscuit.slimefun4.api.items.SlimefunItem;
+import io.github.thebusybiscuit.slimefun4.api.items.SlimefunItemStack;
 
 public class NormalMobD implements Listener {
     @EventHandler

@@ -1,13 +1,14 @@
 package cn.zimzaza4.slimefunzt.items.material;
 
-import io.github.thebusybiscuit.slimefun4.api.geo.GEOResource;
+import javax.annotation.Nonnull;
+
 import org.bukkit.NamespacedKey;
 import org.bukkit.World;
 import org.bukkit.block.Biome;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.plugin.Plugin;
 
-import javax.annotation.Nonnull;
+import io.github.thebusybiscuit.slimefun4.api.geo.GEOResource;
 
 public class EnderOre implements GEOResource {
     public final  NamespacedKey key;

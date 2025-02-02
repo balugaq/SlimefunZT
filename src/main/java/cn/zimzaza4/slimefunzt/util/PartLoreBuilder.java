@@ -1,9 +1,9 @@
 package cn.zimzaza4.slimefunzt.util;
 
-import org.bukkit.inventory.ItemStack;
-
 import java.util.ArrayList;
 import java.util.List;
+
+import org.bukkit.inventory.ItemStack;
 
 public class PartLoreBuilder {
     public String PartLoreLine = "§7• §e-- §l配件:";

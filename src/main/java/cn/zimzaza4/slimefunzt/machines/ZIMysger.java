@@ -1,13 +1,14 @@
 package cn.zimzaza4.slimefunzt.machines;
 
+import org.bukkit.Material;
+import org.bukkit.inventory.ItemStack;
+
 import io.github.thebusybiscuit.slimefun4.api.items.ItemGroup;
 import io.github.thebusybiscuit.slimefun4.api.items.SlimefunItemStack;
 import io.github.thebusybiscuit.slimefun4.api.recipes.RecipeType;
 import io.github.thebusybiscuit.slimefun4.implementation.SlimefunItems;
 import me.mrCookieSlime.Slimefun.Objects.SlimefunItem.abstractItems.AGenerator;
 import me.mrCookieSlime.Slimefun.Objects.SlimefunItem.abstractItems.MachineFuel;
-import org.bukkit.Material;
-import org.bukkit.inventory.ItemStack;
 
 public class ZIMysger extends AGenerator {
     public ZIMysger(ItemGroup category, String id, ItemStack item, RecipeType recipeType, ItemStack[] recipe) {

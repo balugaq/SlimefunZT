@@ -1,14 +1,9 @@
 package cn.zimzaza4.slimefunzt.machines;
 
-import io.github.mooy1.infinityexpansion.InfinityExpansion;
-import io.github.thebusybiscuit.slimefun4.api.items.ItemGroup;
-import io.github.thebusybiscuit.slimefun4.api.items.SlimefunItem;
-import io.github.thebusybiscuit.slimefun4.api.items.SlimefunItemStack;
-import io.github.thebusybiscuit.slimefun4.api.recipes.RecipeType;
-import io.github.thebusybiscuit.slimefun4.core.attributes.EnergyNetComponent;
-import io.github.thebusybiscuit.slimefun4.core.networks.energy.EnergyNetComponentType;
-import me.mrCookieSlime.CSCoreLibPlugin.Configuration.Config;
-import me.mrCookieSlime.Slimefun.Objects.handlers.BlockTicker;
+import java.util.Collection;
+
+import javax.annotation.Nonnull;
+
 import org.bukkit.Color;
 import org.bukkit.Location;
 import org.bukkit.Material;
@@ -18,8 +13,15 @@ import org.bukkit.entity.Entity;
 import org.bukkit.entity.LivingEntity;
 import org.bukkit.inventory.ItemStack;
 
-import javax.annotation.Nonnull;
-import java.util.Collection;
+import io.github.mooy1.infinityexpansion.InfinityExpansion;
+import io.github.thebusybiscuit.slimefun4.api.items.ItemGroup;
+import io.github.thebusybiscuit.slimefun4.api.items.SlimefunItem;
+import io.github.thebusybiscuit.slimefun4.api.items.SlimefunItemStack;
+import io.github.thebusybiscuit.slimefun4.api.recipes.RecipeType;
+import io.github.thebusybiscuit.slimefun4.core.attributes.EnergyNetComponent;
+import io.github.thebusybiscuit.slimefun4.core.networks.energy.EnergyNetComponentType;
+import me.mrCookieSlime.CSCoreLibPlugin.Configuration.Config;
+import me.mrCookieSlime.Slimefun.Objects.handlers.BlockTicker;
 
 /**
  * A block that becomes bedrock when powered, for decoration of course
@@ -76,7 +78,7 @@ public final class Antier extends SlimefunItem implements EnergyNetComponent {
                         a.add(0, 0.4, 0);
                         Particle.DustOptions d = new Particle.DustOptions(color, size);
 
-                        a.getWorld().spawnParticle(Particle.REDSTONE, a.getBlockX() + 0.5, a.getBlockY(), a.getBlockZ() + 0.5,
+                        a.getWorld().spawnParticle(Particle.DUST, a.getBlockX() + 0.5, a.getBlockY(), a.getBlockZ() + 0.5,
                                 1, d);
                         Collection<Entity> p = a.getWorld().getNearbyEntities(a, 0.5, 1, 0.5);
 

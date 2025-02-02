@@ -1,11 +1,12 @@
 package cn.zimzaza4.slimefunzt.World;
 
-import cn.zimzaza4.slimefunzt.SlimefunZT;
+import java.util.Collection;
+
 import org.bukkit.Bukkit;
 import org.bukkit.entity.Player;
 import org.bukkit.scheduler.BukkitRunnable;
 
-import java.util.Collection;
+import cn.zimzaza4.slimefunzt.SlimefunZT;
 
 public class VoidWorldDamage {
 

@@ -1,5 +1,8 @@
 package cn.zimzaza4.slimefunzt.items;
 
+import org.bukkit.Material;
+import org.bukkit.inventory.ItemStack;
+
 import cn.zimzaza4.slimefunzt.SlimefunZT;
 import cn.zimzaza4.slimefunzt.lists.Items;
 import cn.zimzaza4.slimefunzt.machines.ie.NewSingConer;
@@ -10,8 +13,6 @@ import io.github.thebusybiscuit.slimefun4.api.items.SlimefunItem;
 import io.github.thebusybiscuit.slimefun4.api.items.SlimefunItemStack;
 import io.github.thebusybiscuit.slimefun4.api.recipes.RecipeType;
 import io.github.thebusybiscuit.slimefun4.implementation.SlimefunItems;
-import org.bukkit.Material;
-import org.bukkit.inventory.ItemStack;
 
 public class IEItem {
     public static void setup(SlimefunZT zt) {

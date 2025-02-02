@@ -1,11 +1,12 @@
 package cn.zimzaza4.slimefunzt.util;
 
+import org.bukkit.Material;
+import org.bukkit.NamespacedKey;
+
 import cn.zimzaza4.slimefunzt.SlimefunZT;
 import cn.zimzaza4.slimefunzt.lists.Items;
 import io.github.bakedlibs.dough.items.CustomItemStack;
 import io.github.thebusybiscuit.slimefun4.api.recipes.RecipeType;
-import org.bukkit.Material;
-import org.bukkit.NamespacedKey;
 
 public class RecipeTypes {
 

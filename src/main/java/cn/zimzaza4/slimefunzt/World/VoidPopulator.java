@@ -1,31 +1,28 @@
 package cn.zimzaza4.slimefunzt.World;
 
-import cn.zimzaza4.slimefunzt.SlimefunZT;
-import cn.zimzaza4.slimefunzt.lists.Items;
-import cn.zimzaza4.slimefunzt.util.SchematicUtil;
+import java.util.Random;
 
-import com.sk89q.worldedit.WorldEditException;
-import com.sk89q.worldedit.extent.clipboard.Clipboard;
-import lombok.SneakyThrows;
-import me.mrCookieSlime.Slimefun.api.BlockStorage;
 import org.bukkit.Chunk;
 import org.bukkit.Location;
 import org.bukkit.Material;
 import org.bukkit.World;
 import org.bukkit.block.Block;
 import org.bukkit.generator.BlockPopulator;
-import org.jetbrains.annotations.NotNull;
 
-import java.util.Random;
+import com.sk89q.worldedit.WorldEditException;
+import com.sk89q.worldedit.extent.clipboard.Clipboard;
+
+import cn.zimzaza4.slimefunzt.SlimefunZT;
+import cn.zimzaza4.slimefunzt.lists.Items;
+import cn.zimzaza4.slimefunzt.util.SchematicUtil;
+import lombok.SneakyThrows;
+import me.mrCookieSlime.Slimefun.api.BlockStorage;
 
 public class VoidPopulator extends BlockPopulator {
 
     @SneakyThrows
     @Override
-    public void populate(@NotNull World world, @NotNull Random random, @NotNull Chunk chunk) {
-        if (BlockStorage.getStorage(world) == null) {
-            new BlockStorage(world);
-        }
+    public void populate(World world, Random random, Chunk chunk) {
         Double canspawn = Math.random();
         int x = random.nextInt(16);
         int y = random.nextInt(10);
@@ -70,7 +67,7 @@ public class VoidPopulator extends BlockPopulator {
             for (y = 180; y > 170; y--) {
 
                 if (chunk.getBlock(x, y, z).getType() == Material.GRASS_BLOCK) {
-                    chunk.getBlock(x, y + 1, z).setType(Material.GRASS);
+                    chunk.getBlock(x, y + 1, z).setType(Material.SHORT_GRASS);
                     break;
                 }
             }
