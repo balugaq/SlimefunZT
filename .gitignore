@@ -15,3 +15,5 @@ buildNumber.properties
 .classpath
 .project
 .factorypath
+.idea/
+*.iml

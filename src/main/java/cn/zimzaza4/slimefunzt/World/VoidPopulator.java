@@ -2,6 +2,11 @@ package cn.zimzaza4.slimefunzt.World;
 
 import java.util.Random;
 
+import com.sk89q.worldedit.WorldEditException;
+import com.sk89q.worldedit.extent.clipboard.Clipboard;
+import io.github.thebusybiscuit.slimefun4.implementation.Slimefun;
+import lombok.SneakyThrows;
+import me.mrCookieSlime.Slimefun.api.BlockStorage;
 import org.bukkit.Chunk;
 import org.bukkit.Location;
 import org.bukkit.Material;
@@ -22,7 +27,7 @@ public class VoidPopulator extends BlockPopulator {
 
     @SneakyThrows
     @Override
-    public void populate(World world, Random random, Chunk chunk) {
+    public void populate(@NotNull World world, @NotNull Random random, @NotNull Chunk chunk) {
         Double canspawn = Math.random();
         int x = random.nextInt(16);
         int y = random.nextInt(10);
