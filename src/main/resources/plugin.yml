@@ -1,7 +1,7 @@
 # yaml-language-server: $schema=https://json.schemastore.org/bukkit-plugin
 
 name: SlimefunZT
-version: ${project.version}
+version: 2.0
 author: zimzaza4
 main: cn.zimzaza4.slimefunzt.SlimefunZT
 depend: [Slimefun, WorldEdit, InfinityExpansion]
@@ -11,4 +11,4 @@ loadbefore:
 softdepend:
   - EliteMobs
   - GeneticChickengineering
-api-version: 1.17
+api-version: 1.21
