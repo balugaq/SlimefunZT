@@ -23,9 +23,9 @@ import io.github.thebusybiscuit.slimefun4.api.recipes.RecipeType;
 import io.github.thebusybiscuit.slimefun4.implementation.SlimefunItems;
 import io.github.thebusybiscuit.slimefun4.implementation.items.electric.machines.ElectricIngotFactory;
 import me.mrCookieSlime.Slimefun.Objects.SlimefunItem.abstractItems.AContainer;
-import space.kiichan.geneticchickengineering.GeneticChickengineering;
-import space.kiichan.geneticchickengineering.items.GCEItems;
-import space.kiichan.geneticchickengineering.machines.ExcitationChamber;
+import net.guizhanss.gcereborn.GeneticChickengineering;
+import net.guizhanss.gcereborn.items.GCEItems;
+import net.guizhanss.gcereborn.items.machines.ExcitationChamber;
 
 public class RegSFMachine {
 
@@ -131,7 +131,7 @@ public class RegSFMachine {
                         autosoulcraft.register(SlimefunZT.getInstance());
 
                 if (Bukkit.getPluginManager().getPlugin("GeneticChickengineering")!=null) {
-                        new ExcitationChamber(JavaPlugin.getPlugin(GeneticChickengineering.class), Items.Cate, Items.Soul_ece, 0, 14, RecipeType.ENHANCED_CRAFTING_TABLE, new ItemStack[]
+                        new ExcitationChamber(Items.Cate, Items.Soul_ece, RecipeType.ENHANCED_CRAFTING_TABLE, new ItemStack[]
                                 {SlimefunItems.REINFORCED_ALLOY_INGOT, Items.EM_soul, SlimefunItems.REINFORCED_ALLOY_INGOT
                                         , null, GCEItems.EXCITATION_CHAMBER_2, null, null, new ItemStack(Material.NETHERITE_BLOCK), null}).setCapacity(1000).setEnergyConsumption(15).setProcessingSpeed(10).register(SlimefunZT.getInstance());
                 }
