@@ -7,7 +7,6 @@ main: cn.zimzaza4.slimefunzt.SlimefunZT
 depend: [Slimefun, WorldEdit, InfinityExpansion]
 loadbefore:
 - SlimeCustomizer
-- Multiverse-Core
 softdepend:
   - EliteMobs
   - GeneticChickengineering
