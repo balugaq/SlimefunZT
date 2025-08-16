@@ -15,27 +15,27 @@ import io.github.thebusybiscuit.slimefun4.utils.LoreBuilder;
 
 public class Items {
 
-        public static NestedItemGroup Main_Cate = new NestedItemGroup(new NamespacedKey(SlimefunZT.getInstance(), "ZIM_MAIN_CATE"), new CustomItemStack(Material.NETHERITE_BLOCK, "&cSiciliaCraft"));
+        public static NestedItemGroup Main_Cate = new NestedItemGroup(new NamespacedKey(SlimefunZT.getInstance(), "ZIM_MAIN_CATE"), new CustomItemStack(Material.NETHERITE_BLOCK, "&c精英之魂"));
         public static SubItemGroup Cate = new SubItemGroup(new NamespacedKey(SlimefunZT.getInstance(), "ZIM_MA_D"),Main_Cate,
-                        new CustomItemStack(Material.BLACK_STAINED_GLASS, "&e&l SC拓展 &7- &6机器"));
+                        new CustomItemStack(Material.BLACK_STAINED_GLASS, "&e&l 精英之魂 &7- &6机器"));
 
         public static SubItemGroup MatCate = new SubItemGroup(new NamespacedKey(SlimefunZT.getInstance(), "ZIM_MAT"),Main_Cate,
-                        new CustomItemStack(Material.GOLD_ORE, "&e&l SC拓展 &7- &d材料"));
+                        new CustomItemStack(Material.GOLD_ORE, "&e&l 精英之魂 &7- &d材料"));
 
         public static SubItemGroup crystal = new SubItemGroup(new NamespacedKey(SlimefunZT.getInstance(), "ZIM_MA_D_C"),Main_Cate,
-                        new CustomItemStack(Material.DIAMOND, "&e&l SC拓展 &7- &9强化"));
+                        new CustomItemStack(Material.DIAMOND, "&e&l 精英之魂 &7- &9强化"));
 
         public static SubItemGroup ToolCate = new SubItemGroup(new NamespacedKey(SlimefunZT.getInstance(), "ZIM_MA_TOOL"),Main_Cate,
-                        new CustomItemStack(Material.DIAMOND_PICKAXE, "&b&l SC拓展 &7- &6工具"));
+                        new CustomItemStack(Material.DIAMOND_PICKAXE, "&b&l 精英之魂 &7- &6工具"));
 
         public static SubItemGroup WeaponCate = new SubItemGroup(new NamespacedKey(SlimefunZT.getInstance(), "ZIM_WEAPONS"),Main_Cate,
-            new CustomItemStack(Material.IRON_SWORD, "&b&l SC拓展 &7- &e武器和锻造"));
+            new CustomItemStack(Material.IRON_SWORD, "&b&l 精英之魂 &7- &e武器和锻造"));
 
         public static SubItemGroup IE = new SubItemGroup(new NamespacedKey(SlimefunZT.getInstance(), "ZIM_MA_IE"),Main_Cate,
-                        new CustomItemStack(Material.NETHERITE_BLOCK, "&e&l SC拓展 &7- &c疯狂无限"));
+                        new CustomItemStack(Material.NETHERITE_BLOCK, "&e&l 精英之魂 &7- &c疯狂无限"));
 
         public static SubItemGroup NB = new SubItemGroup(new NamespacedKey(SlimefunZT.getInstance(), "ZIM_NEW_B"),Main_Cate,
-            new CustomItemStack(Material.BEDROCK, "&e&l SC拓展 &7- &a结束了?"));
+            new CustomItemStack(Material.BEDROCK, "&e&l 精英之魂 &7- &a结束了?"));
     // -------------------------------------------------------------------------------------------------------------------------------------------
 
     // 多方块结构
