@@ -4,7 +4,6 @@ import org.bukkit.Bukkit;
 import org.bukkit.Color;
 import org.bukkit.Material;
 import org.bukkit.inventory.ItemStack;
-import org.bukkit.plugin.java.JavaPlugin;
 
 import cn.zimzaza4.slimefunzt.SlimefunZT;
 import cn.zimzaza4.slimefunzt.lists.Items;
@@ -23,7 +22,6 @@ import io.github.thebusybiscuit.slimefun4.api.recipes.RecipeType;
 import io.github.thebusybiscuit.slimefun4.implementation.SlimefunItems;
 import io.github.thebusybiscuit.slimefun4.implementation.items.electric.machines.ElectricIngotFactory;
 import me.mrCookieSlime.Slimefun.Objects.SlimefunItem.abstractItems.AContainer;
-import net.guizhanss.gcereborn.GeneticChickengineering;
 import net.guizhanss.gcereborn.items.GCEItems;
 import net.guizhanss.gcereborn.items.machines.ExcitationChamber;
 
