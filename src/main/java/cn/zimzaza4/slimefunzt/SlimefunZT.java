@@ -24,7 +24,7 @@ import cn.zimzaza4.slimefunzt.util.SchematicUtil;
 import io.github.mooy1.infinitylib.core.AbstractAddon;
 
 public class SlimefunZT extends AbstractAddon {
-    public Boolean isFAME;
+    public Boolean isFAWE;
     public Boolean isDebug;
     public static SlimefunZT inst;
     private static SlimefunZT Instance;
@@ -57,7 +57,7 @@ public class SlimefunZT extends AbstractAddon {
 
         inst = this;
 
-        this.isFAME = Bukkit.getPluginManager().getPlugin("FastAsyncWorldEdit") != null;
+        this.isFAWE = Bukkit.getPluginManager().getPlugin("FastAsyncWorldEdit") != null;
         setupConfig();
         RegSFMachine.run();
         RegSFItem.run();

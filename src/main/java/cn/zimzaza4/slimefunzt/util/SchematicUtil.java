@@ -41,7 +41,7 @@ public class SchematicUtil {
             return clipboard;
     }
     public static void SpawnSchmatic(Clipboard cb, Location l) throws WorldEditException {
-            if (SlimefunZT.getInstance().isFAME==true){
+            if (SlimefunZT.getInstance().isFAWE==true){
                 try (EditSession editSession = WorldEdit.getInstance().getEditSessionFactory().getEditSession(new BukkitWorld(l.getWorld()), -1)) {
                     Operation operation = new ClipboardHolder(cb)
                             .createPaste(editSession)
@@ -50,7 +50,7 @@ public class SchematicUtil {
                             .ignoreAirBlocks(true)
                             .build();
                     Operations.complete(operation);
-                    editSession.flushSession();
+                    editSession.flushQueue();
                     editSession.close();
                 }
             }else{
