@@ -10,6 +10,7 @@
   <name>SlimefunZT</name>
 
   <properties>
+    <EliteMobs-systemPath>C:\Users\11877\Documents\GitHub\SlimefunZT/lib/EliteMobs.jar</EliteMobs-systemPath>
     <maven.compiler.target>21</maven.compiler.target>
     <maven.compiler.source>21</maven.compiler.source>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -110,7 +111,7 @@
       <artifactId>EliteMobs</artifactId>
       <version>7.2.33</version>
       <scope>system</scope>
-      <systemPath>C:\Users\11877\Documents\GitHub\SlimefunZT/lib/EliteMobs.jar</systemPath>
+      <systemPath>${EliteMobs-systemPath}</systemPath>
     </dependency>
             <dependency>
             <groupId>com.google.code.findbugs</groupId>

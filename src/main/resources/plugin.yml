@@ -4,7 +4,7 @@ name: SlimefunZT
 version: 2.0
 author: zimzaza4
 main: cn.zimzaza4.slimefunzt.SlimefunZT
-depend: [Slimefun, WorldEdit, InfinityExpansion]
+depend: [Slimefun, FastAsyncWorldEdit, InfinityExpansion]
 loadbefore:
 - SlimeCustomizer
 softdepend:
