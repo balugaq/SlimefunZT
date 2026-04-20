@@ -277,7 +277,7 @@ public class VoidWorld extends ChunkGenerator {
                     biome.setBiome(x, z, org.bukkit.block.Biome.THE_VOID);
                 }
             }
-            
+            editSession.flushQueue();
         } catch (Exception e) {
             e.printStackTrace();
         }
