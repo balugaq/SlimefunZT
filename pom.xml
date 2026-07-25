@@ -10,7 +10,6 @@
   <name>SlimefunZT</name>
 
   <properties>
-    <EliteMobs-systemPath>C:\Users\11877\Documents\GitHub\SlimefunZT/lib/EliteMobs.jar</EliteMobs-systemPath>
     <maven.compiler.target>21</maven.compiler.target>
     <maven.compiler.source>21</maven.compiler.source>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -74,14 +73,14 @@
       <artifactId>InfinityExpansion</artifactId>
       <version>MODIFIED</version>
       <scope>system</scope>
-      <systemPath>C:\Users\11877\Documents\GitHub\SlimefunZT/lib/IE.jar</systemPath>
+      <systemPath>${project.basedir}/lib/IE.jar</systemPath>
     </dependency>
     <dependency>
       <groupId>space.kiichan</groupId>
       <artifactId>GeneticChickengineering</artifactId>
       <version>1.2.1</version>
       <scope>system</scope>
-      <systemPath>C:\Users\11877\Documents\GitHub\SlimefunZT/lib/GC.jar</systemPath>
+      <systemPath>${project.basedir}/lib/GC.jar</systemPath>
     </dependency>
 
     <!-- FAWE 核心 API -->
@@ -111,7 +110,7 @@
       <artifactId>EliteMobs</artifactId>
       <version>7.2.33</version>
       <scope>system</scope>
-      <systemPath>${EliteMobs-systemPath}</systemPath>
+      <systemPath>${project.basedir}/lib/EliteMobs.jar</systemPath>
     </dependency>
             <dependency>
             <groupId>com.google.code.findbugs</groupId>
